@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author iTECH
+ * @author Ezzeddine Berjawi
  */
 public class EzzeddineBerjawi_AJLab2021 extends Application {
     
