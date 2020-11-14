@@ -53,7 +53,7 @@ public class classwork extends Application {
     public Pane createPane() throws FileNotFoundException{
         VBox pane=new VBox(10);
         pane.setPadding(new Insets(10));
-        pane.getChildren().addAll(createText(),insertImageViewFromURL(),insertImageViewFromPath());
+        pane.getChildren().addAll(createText(),insertImageViewFromURL());
         return pane;
     }
     
@@ -69,13 +69,7 @@ public class classwork extends Application {
         
         return img;
     }
-    public ImageView insertImageViewFromPath() throws FileNotFoundException{
-        InputStream in = new FileInputStream("C:\\Users\\iTECH\\Desktop\\man.png");
-        Image image=new Image(in);
-        ImageView img = new ImageView(image);
-        
-        return img;
-    }
+    
     
     @Override
     public void start(Stage primaryStage) throws FileNotFoundException {    
